@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    /* margin: 0 2rem; */
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 6rem;
+}
+
+.logo{
+    font-size: 46px;
+    font-family: "Fjalla One";
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: large;
+    font-weight: 500;
+    font-family: "Poppins";
+    gap: 2rem;
+}
+
+li{
+    margin: 1rem;
+}
+
+nav button{
+    font-family: "Poppins";
+    font-weight: 500;
+    /* font-size: large; */
+    border-radius: 50px;
+    color: white;
+    height: 2.6rem;
+    background-color: #1c1c1c;
+    padding: .5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.head-text{
+    margin: 5rem -5rem;
+}
+
+.head-text div{
+    display: flex;
+    align-items: center;
+    /* font-family: "Poppins";
+    font-family: "Ubuntu"; */
+    font-family: "Roboto";
+    margin: -2rem 0;
+    /* max-width: 30vw; */
+}
+
+.Home h4{
+    /* margin: -12px 0; */
+    text-align: start;
+    /* text-transform: uppercase; */
+    font-size: 6rem;
+}
+
+.head-text p{
+    margin-top: 3rem;
+}
+
+.head-text p div{
+    font-family: "Raleway";
+    width: 35vw;
+    margin: -.6rem 0rem;
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width:800px){
+    .Home{
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    nav ul{
+        margin: 1rem;
+        display: none;
+    }
+    
+    .navbar{
+        display: block;
+        
+    }
+    
+    .head-text h4{
+        font-size: 65px;
+        /* margin: 1rem 4rem; */
+    }
+    
+    .head-text{
+        width: auto;
+        margin: 2rem 1rem;
+    }
+    
+    .head-text p div{
+        font-family: "Raleway";
+        width: 80vw;
+        text-align: start;
+        margin: -.6rem 0rem;
+        font-size: 2rem;
+    }
+}
